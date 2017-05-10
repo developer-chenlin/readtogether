@@ -1,0 +1,44 @@
+ 
+
+<view class="tongqu-main">
+  <view class="top-tab flex-wrp flex-tab ">
+    <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">{{itemName}}</view>
+  </view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{banners}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <scroll-view  bindscrolltolower="lowerRefresh" bindscrolltoupper="upperLoad">
+    <block wx:for="{{books}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+      <navigator url="../../pages/detail/detail?bookid={{item.bookid}}" hover-class="navigator-hover">
+        <view class="book-item">
+          <block wx:if="{{item.state == 1 ? true : false}}">
+            <view class="book-state">
+              <image src="../../images/zaijie.png"></image>
+            </view>
+          </block>
+          <view class="book-left">
+            <image src="{{item.bookcover}}"></image>
+          </view>
+          <view class="book-right">
+            <view class="book-title">
+              <text>{{item.bookname}}</text>
+            </view>
+            <view class="book-brief">
+              <text>{{item.introduce}}</text>
+            </view>
+            <view class="book-info">
+              <view class="book-author">
+                <image src="../../images/author.png"></image>
+                <text>{{item.author}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+</view>

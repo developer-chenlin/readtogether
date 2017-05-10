@@ -1,0 +1,61 @@
+<scroll-view class="article-list" scroll-y="true" bindscrolltolower="lower">
+
+ 
+  <!--<view class="article-item">
+    <view class="article-item-top">
+      <view class="article-item-top-title">爱的教育读后感</view>
+    </view>
+    <view class="article-item-middle">
+      <view class="article-item-brief">
+        书中还有一个文章叫弟弟的女老师，我非常尊敬文中的女老师，她代替这些这本书是意大利亚米契斯写的，我非常喜欢这本书里一个11岁的少年。他为了自己祖国的尊严，抛弃了那三个旅客给他的金币。并怒气冲冲地对那三个旅客说他们侮辱了他的祖国，他一分钱也不要。为了自己祖国的尊严而放弃了自己的利益，这一点很然我肃然起敬。
+      </view>
+    </view>
+    <view class="article-item-bottom">
+      <view class="article-item-bottom-info">
+        <view class="article-item-bottom-info-wrapper">
+          <image class="article-item-bottom-info-icon" src="../../images/zan.png"></image>
+          <view class="article-item-bottom-info-text">1110</view>
+        </view>
+      </view>
+    <view class="article-item-bottom-info">
+        <view class="article-item-bottom-info-wrapper">
+          <image class="article-item-bottom-info-icon" src="../../images/pinglun.png"></image>
+          <view class="article-item-bottom-info-text">111</view>
+        </view>
+      </view>
+      <view class="article-item-bottom-info">
+        <view class="article-item-bottom-info-wrapper">
+          <image class="article-item-bottom-info-icon" src="../../images/author.png"></image>
+          <view class="article-item-bottom-info-text">陈林</view>
+        </view>
+      </view>
+      <view class="article-item-bottom-info">
+        <view class="article-item-bottom-info-wrapper">
+          <image class="article-item-bottom-info-icon" src="../../images/time.png"></image>
+          <view class="article-item-bottom-info-text">2018-2-1</view>
+        </view>
+      </view>
+    </view>
+  </view>-->
+
+    
+
+      <block wx:for="{{report}}" wx:for-index="idx"   wx:key="property"   wx:for-item="item" data-idx="{{idx}}" >
+    <navigator url="../../pages/report/report"  hover-class="navigator-hover"> 
+
+<view class="article-container">
+<view class="article-title">{{item.title}}</view>
+<view class="article-brief">{{item.brief}}</view>
+<view class="article-info">{{item.readername}} 发表于 {{item.time}}   已有 23 人赞 </view>
+
+</view>
+
+
+
+
+ </navigator>
+</block>
+</scroll-view>
+
+
+ 

@@ -1,0 +1,46 @@
+<scroll-view scroll-y="true">
+  <block wx:for="{{book}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+    <view class="meta">
+      <image class="poster" src="{{item.bookcover}}" background-size="cover"></image>
+      <text class="title">{{item.bookname}}</text>
+      <text class="info">作者：{{item.author}} </text>
+      <text class="info" wx:if="{{item.bookkind == 1}}">分类：文学艺术</text>
+      <text class="info" wx:elif="{{item.bookkind == 2}}">分类：人文社科</text>
+      <text class="info" wx:elif="{{item.bookkind == 3}}">分类：经济管理</text>
+      <text class="info" wx:elif="{{item.bookkind == 4}}">分类：励志与成功</text>
+      <text class="info" wx:elif="{{item.bookkind == 5}}">分类：科技</text>
+      <text class="info" wx:else>分类：其他</text>
+
+      <!--<text class="info">分类：{{item.bookkind}}</text>-->
+      <text class="info">条码值：{{item.bookid}}</text>
+    </view>
+    <view class="summary">
+      <text class="label">摘要:</text>
+      <text class="content">"{{item.introduce}}"</text>
+    </view>
+  </block>
+  <view class="comment-head">评论</view>
+  <block wx:for="{{comdesc}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+    <view class="comment-item">
+      <view class="comment-left">
+        <image class="comment-left-face" src="{{item.readerface}}"></image>
+      </view>
+      <view class="comment-right">
+        <view class="comment-name">{{item.readername}}</view>
+        <view class="comment-time">{{item.rec_time}}</view>
+        <view class="comment-desc">{{item.content}}</view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<view class=""> </view>
+<view class="que-operate flex-wrp">
+  <view class="invite flex-item">
+    <image src="../../images/zanyixia.png"></image>
+    <text>赞一下</text>
+  </view>
+  <view class="write flex-item">
+    <image src="../../images/xiepinglun.png"></image>
+    <text>写评论</text>
+  </view>
+</view>

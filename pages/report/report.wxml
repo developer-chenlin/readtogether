@@ -1,0 +1,34 @@
+
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+ <scroll-view scroll-y="true">
+
+ 
+  <view class="comment-head">评论</view>
+     <view class="comment-item">
+      <view class="comment-left">
+        <image class="comment-left-face" src="https://chenlean.com/demo/chenlin.png"></image>
+      </view>
+      <view class="comment-right">
+        <view class="comment-name">陈林</view>
+        <view class="comment-time">2017-3-9</view>
+        <view class="comment-desc">这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。这篇读后感写的太好了生动，感人。</view>
+      </view>
+    </view>
+ 
+  </scroll-view>
+       <view class=""> </view>
+        <view class="que-operate flex-wrp">
+            <view class="invite flex-item">
+                <image src="../../images/zanyixia.png"></image>
+                <text>赞一下</text>
+            </view>
+            <view class="write flex-item">
+                <image src="../../images/xiepinglun.png"></image>
+                <text>写评论</text>
+            </view>
+        </view>
+   

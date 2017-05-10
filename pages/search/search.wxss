@@ -1,0 +1,47 @@
+@import "/wxSearch/wxSearch.wxss";
+
+.search-list{
+    width: 100%;
+    height: 100%;
+    padding: 30rpx 0rpx;
+    display: flex;
+    flex-direction:column;
+}
+
+.search-section {
+     margin-bottom:40rpx;
+    padding-left: 10rpx;
+    padding-top:40rpx;
+    width: 100%;
+    height: 40rpx;
+     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-section text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30rpx;
+    font-weight: 700;
+    line-height: 40rpx;
+}
+
+.search-item {
+    
+    width: 100%;
+    height: 60rpx;
+     padding: 10rpx;
+    display: flex;
+    flex-direction: row;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+
+}
+
+.search-item text {
+    font-size: 24rpx;
+    line-height: 60rpx;
+    color: #888;
+ 
+}
+

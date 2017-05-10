@@ -1,0 +1,73 @@
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 200rpx 0;*/
+  box-sizing: border-box;
+  background: #F0F4F3;
+}
+
+.container.withtab{
+  margin: 105rpx 0 0 0;
+  /*top: 105rpx;*/
+}
+.flex-wrp{
+  display: flex;
+}
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex-wrp{
+  display: flex;
+}
+ 
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.page{
+    display: block;
+  min-height: 100%;
+  background-color: red;
+}
+ 
+
+ .question-item .que-follow .left text{
+    color: #AFAFAF;
+    height: 50rpx;
+    vertical-align: middle;
+    padding: 18rpx 0;
+    font-size: 24rpx;
+}
+.que-operate .flex-item{
+    padding: 20rpx 0;
+    font-size: 26rpx;
+ }
+.que-operate .invite{
+  margin-right: 6rpx;
+     background-color: #EEE;
+ }
+.que-operate .write{
+     background-color: #EEE;
+ }
+.que-operate image{
+    width: 50rpx;
+    height: 50rpx;
+    vertical-align: middle;
+    margin: 0 20rpx 0 0;
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 64rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fangzi:before { content: "\e643"; }

@@ -1,0 +1,44 @@
+<view class='enter'>
+  <view class='avatar'>
+    <image src="https://chenlean.com/demo/chenlin.png" />
+  </view>
+  <view class='info'>
+    <view class='name'>陈林</view>
+  </view>
+  <navigator url="profile/profile">
+    <button class="complect">退出登录</button>
+  </navigator>
+</view>
+<view class="main">
+  <navigator url='../me-info/me-info'>
+    <view class="my-items my-info">
+      <text class="iconfont icon-fangzi"></text>
+      <text class="word">我的信息</text>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+  </navigator>
+
+    <navigator url='../me-level/me-level'>
+  <view class="my-items my-info">
+    <text class="iconfont icon-fangzi"></text>
+    <text>成长值</text>
+    <text class="iconfont icon-jiantou"></text>
+  </view>
+ </navigator>
+   <navigator url='../me-hirstory/me-hirstory'>
+
+  <view class="my-items my-info">
+    <text class="iconfont icon-fangzi"></text>
+    <text>我的借阅</text>
+    <text class="iconfont icon-jiantou"></text>
+  </view>
+  </navigator>
+  <navigator url="../me-list/me-list">
+  <view class="my-items my-info">
+    <text class="iconfont icon-fangzi"></text>
+    <text>愿望清单</text>
+    <text class="iconfont icon-jiantou"></text>
+  </view>
+   </navigator>
+</view>
+<button class="mylend" bindtap="saoma">我要借书</button>

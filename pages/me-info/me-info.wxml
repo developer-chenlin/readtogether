@@ -1,0 +1,17 @@
+<view class="main">
+     <view class="my-items my-info">
+       <text class="word">陈林</text>
+ 
+     </view>
+ 
+   <view class="my-items my-info">
+     <text>GDEK1743</text>
+   </view>
+  
+  <view class="my-items my-info">
+     <text>电控组</text>
+   </view>
+   <view class="my-items my-info">
+     <text>13827238251</text>
+   </view>
+ </view>

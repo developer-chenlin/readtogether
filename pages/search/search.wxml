@@ -1,0 +1,50 @@
+<import src="/wxSearch/wxSearch.wxml" />
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索书名" maxlength="20" />
+    <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">查找</button>
+  </view>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}" />
+<scroll-view>
+
+
+  <view class="search-list">
+
+
+    <view class="search-section">
+      <text wx:if="{{needShow}}">搜索结果</text>
+      <text wx:else></text>
+    </view>
+    <block wx:for="{{search}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+      <navigator url="../../pages/detail/detail?bookid={{item.bookid}}" hover-class="navigator-hover">
+        <view class="search-item">
+          <text>{{item.bookname}}</text>
+        </view>
+      </navigator>
+    </block>
+
+    <view class="search-section">
+
+          <text wx:if="{{needShow}}">为您推荐</text>
+      <text wx:else></text>
+
+
+ 
+
+    </view>
+    <block wx:for="{{recommend}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+      <navigator url="../../pages/detail/detail?bookid={{item.bookid}}" hover-class="navigator-hover">
+        <view class="search-item">
+          <text>{{item.bookname}}</text>
+        </view>
+      </navigator>
+    </block>
+
+
+  </view>
+
+
+
+
+</scroll-view>

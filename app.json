@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/say/say",
+    "pages/me/me",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/report/report",
+    "pages/me-hirstory/me-hirstory",
+    "pages/me-level/me-level",
+    "pages/me-list/me-list",
+    "pages/me-info/me-info"
+  ],
+  "window": {
+     "navigationBarBackgroundColor": "#51658A",
+    "navigationBarTitleText": "一起读书",
+     "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+     "backgroundColor": "#51658A",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书库",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_s.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查找",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_s.png"
+      },
+      {
+        "pagePath": "pages/say/say",
+        "text": "读后感",
+        "iconPath": "images/mysay.png",
+        "selectedIconPath": "images/mysay_s.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "关于我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_s.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+.want-preofile{
+ width: 100%;
+ height: 100%;
+   background-color: palevioletred;
+  margin: 30rpx 0rpx;
+  padding: 15rpx;
+ 
+}
+
+.want-preofile text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24rpx;
+  
+} 

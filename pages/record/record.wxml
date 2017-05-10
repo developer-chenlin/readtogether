@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="textContainer">
+    <text class="textStyle">{{text}}</text>
+  </view>
+</view>
+<view class="main">  
+    <view class="my-items my-info">
+      <text class="iconfont icon-fangzi"></text>
+      <navigator url="../my_info/my_info"><text class="word">我的信息</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+ 
+</view>
+
+
+
+<view class="service">
+  <view class="my-items contact-service">
+    <text class="iconfont icon-lianxikefu"></text>
+    <navigator url="../my_info/my_info"><text class="word">联系客服</text></navigator>
+    <text class="iconfont icon-jiantou"></text>
+  </view>
+</view>

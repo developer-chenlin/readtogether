@@ -1,0 +1,128 @@
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 900rpx;
+  padding: 50rpx 40rpx 0rpx 40rpx;
+}
+
+.poster {
+  width: 80%;
+  height: 80%;
+  margin: 20rpx;
+}
+
+.title {
+  font-style: 42rpx;
+  color: #444;
+}
+
+.info {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 20rpx;
+  width: 80%;
+}
+
+.summary {
+  width: 80%;
+  margin: 30rpx auto;
+}
+
+.label {
+  display: block;
+  font-size: 24rpx;
+   font-weight: 700;
+}
+
+.content {
+  color: #666;
+  font-size: 20rpx;
+  padding: 10rpx;
+}
+
+.comment-head {
+  padding: 10rpx 10rpx 10rpx 20rpx;
+  font-size: 28rpx;
+  font-weight: 800;
+}
+
+.comment-item {
+  overflow: auto;
+  width: 100%;
+  min-height: 200rpx;
+  margin: 0 auto;
+}
+
+.comment-content {
+  background-color: #444;
+}
+
+.comment-left {
+  height: 50rpx;
+  width: 50rpx;
+  margin: 10rpx; /*设置元素跟其他元素的距离为20像素*/
+  float: left; /*设置浮动，实现多列效果，div+Css布局中很重要的*/
+}
+
+.comment-left-face {
+  width: 100%;
+  background-color: #eee;
+  height: 100%;
+  border-radius: 25rpx;
+  border-width: 1px;
+  border-color: #90c;
+}
+
+.comment-right {
+  height: 100%;
+  width: calc(100% - 110rpx);
+  margin: 20rpx 20rpx 10rpx 10rpx;
+  float: left; /*设置浮动，实现多列效果，div+Css布局中很重要的*/
+}
+
+.comment-name {
+  text-align: left;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.comment-time {
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+.comment-desc {
+  margin-top: 10rpx;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: #666;
+  word-break: break-all;
+} 
+
+ 
+.question-item .que-follow .left text{
+    color: #AFAFAF;
+    height: 50rpx;
+    vertical-align: middle;
+    padding: 18rpx 0;
+    font-size: 24rpx;
+}
+.que-operate .flex-item{
+    padding: 20rpx 0;
+    font-size: 26rpx;
+ }
+.que-operate .invite{
+  margin-right: 6rpx;
+     background-color: #EEE;
+ }
+.que-operate .write{
+     background-color: #EEE;
+ }
+.que-operate image{
+    width: 50rpx;
+    height: 50rpx;
+    vertical-align: middle;
+    margin: 0 20rpx 0 0;
+}

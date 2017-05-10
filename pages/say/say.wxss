@@ -1,0 +1,175 @@
+
+page{
+  background-color: #EEE;
+}
+
+.article-list{
+    margin-top: 20rpx;
+    height: 100%;
+ }
+
+
+.article-item{
+   height: 290rpx;
+ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+margin: 30rpx 10rpx;
+  }
+
+.article-item-top{
+  width: 100%;
+  height: 60rpx;
+  
+   border-top-left-radius: 15rpx;
+    border-top-right-radius: 15rpx;
+
+}
+.article-item-top-title{
+  margin: auto; /*不写这个导致text不能居中*/
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 30rpx;
+  line-height: 60rpx;   /*设置这个和top等高才能使text的对齐方式在center的情况下真正上下对齐*/
+  text-align: center;
+ }
+
+.article-item-middle
+{
+   height: 138rpx;
+  padding: 18rpx 0rpx 18rpx 5rpx;
+  }
+
+
+
+.article-item-brief
+{
+  
+    text-overflow: ellipsis;
+   overflow: hidden;
+ height:  100%;
+  font-size: 24rpx;
+
+}
+.article-item-bottom{
+   width: 100%;
+  height: 56rpx;
+  display: flex;
+       border-bottom-right-radius: 15rpx;
+      border-bottom-left-radius: 15rpx;
+
+     }
+
+.article-item-bottom-info{
+  width: 25%;
+  height: 100%; 
+}
+
+.article-item-bottom-info-wrapper{
+      display: flex;
+}
+
+
+.article-item-bottom-info-icon
+{
+ width: 35rpx;
+height: 35rpx;
+ align-self: center;
+padding-left: 10rpx;
+}
+.article-item-bottom-info-text
+{
+   margin-top: 5rpx;
+ 
+  padding-left: 5rpx;
+  vertical-align: baseline;
+     margin-left: 10rpx;
+      font-size: 24rpx;
+      line-height: 56rpx;
+      text-align: center;
+    color:#DDD;
+}
+ 
+
+
+
+
+
+
+
+
+.para {
+    font-size: .9em;
+    padding-bottom: 30rpx;
+    padding-top: 30rpx;
+}
+#wordscard text {
+  font-size: .8em;
+}
+
+.rowalign {
+    flex-direction: row;
+    float: left;
+}
+.rowalign text {
+  padding-left: 10rpx;
+}
+
+.card, #wordscard {
+    background: #fff;
+    margin: 20rpx 14px;
+    padding: 20px 32rpx;
+    border-radius: 2%;
+}
+
+.card {
+    background: #fff;
+}
+.short-card {
+    height: 250rpx;
+}
+
+.card button {
+    width: 400rpx;
+    margin-top: 30px;
+    margin-bottom: 25rpx;
+    /*margin: 10rpx 75rpx;*/
+}
+
+#wordscard {
+    height: 130px;
+}
+
+
+
+.article-container{
+margin: 30rpx 10rpx  20rpx 10rpx;
+ border-radius: 15rpx; 
+background-color: white;
+}
+
+.article-title 
+{
+       font-family: arial,'pingfang sc',stheiti,"microsoft yahei",sans-serif;
+      padding-top: 16rpx;
+      font-weight: 800;
+      font-size: 32rpx;
+       text-align: center;
+}
+
+.article-brief{
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #444;
+  padding: 10rpx;
+  text-indent: 2em;
+}
+
+.article-info{
+   font-size: 24rpx;
+  color: #BBB;
+  padding: 20rpx; 
+}
