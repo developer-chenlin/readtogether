@@ -1,5 +1,132 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
+<view class="lend-section">
+  <text>正在借阅</text>
+</view>
+<view class="lend-list">
+
+
+  <block wx:for="{{needary}}" wx:for-index="idx" wx:key="property" wx:for-item="item" data-idx="{{idx}}">
+    <view class="book-item">
+      <block wx:if="{{item.state == 1 ? true : false}}">
+        <view class="book-state">
+          <image src="../../images/daihuan.png"></image>
+        </view>
+      </block>
+      <view class="book-left">
+        <image src="{{item.bookcover}}"></image>
+      </view>
+      <view class="book-right">
+        <view class="book-title">
+          <text>{{item.bookname}}</text>
+        </view>
+
+
+        <view class="book-info">
+          <view class="book-author">
+            <image src="../../images/bianhao.png"></image>
+            <text>借阅编号：{{item.recid}}</text>
+          </view>
+
+        </view>
+
+        <view class="book-info">
+          <view class="book-author">
+            <image src="../../images/tiaoma.png"></image>
+            <text>条码：{{item.bookid}}</text>
+          </view>
+
+        </view>
+
+        <view class="book-info">
+          <view class="book-author">
+            <image src="../../images/fennei.png"></image>
+            <text wx:if="{{item.bookkind==0}}">文学艺术</text>
+            <text wx:elif="{{item.bookkind==1}}">人文社科</text>
+            <text wx:elif="{{item.bookkind==2}}">经济管理</text>
+            <text wx:elif="{{item.bookkind==3}}">励志与成功</text>
+            <text wx:elif="{{item.bookkind==1}}">其他</text>
+            <text wx:else>其他</text>
+ 
+
+           </view>
+
+        </view>
+        <view class="book-info">
+          <view class="book-author">
+            <image src="../../images/shijian.png"></image>
+            <text>借：{{item.rectime}}</text>
+          </view>
+
+        </view>
+
+
+
+
+
+
+
+      </view>
+    </view>
+  </block>
+
+</view>
+
+
+
+
+<view class="lend-list">
+  <view class="lend-section">
+    <text>完成借阅</text>
   </view>
+  <block wx:for="{{finishary}}" wx:for-index="idx" wx:key="finishary" wx:for-item="item" data-idx="{{idx}}">
+
+
+
+    <view class="finish-item">
+      <view class="finish-item-title">
+        <text>{{item.bookname}}</text>
+      </view>
+      <view class="finish-item-id">
+        <text>借阅编号：{{item.recid}}</text>
+      </view>
+      <view class="finish-item-timedesc">
+        <text>借于{{item.lendtime}} 还于{{item.rectime}} 历时{{item.constime}}</text>
+      </view>
+    </view>
+  </block>
+
+  <block wx:for="{{finishary}}" wx:for-index="idx" wx:key="finishary" wx:for-item="item" data-idx="{{idx}}">
+
+
+
+    <view class="finish-item">
+      <view class="finish-item-title">
+        <text>{{item.bookname}}</text>
+      </view>
+      <view class="finish-item-id">
+        <text>借阅编号：{{item.recid}}</text>
+      </view>
+      <view class="finish-item-timedesc">
+        <text>借于{{item.lendtime}} 还于{{item.rectime}} 历时{{item.constime}}</text>
+      </view>
+    </view>
+  </block>
+
+  <block wx:for="{{finishary}}" wx:for-index="idx" wx:key="finishary" wx:for-item="item" data-idx="{{idx}}">
+
+
+
+    <view class="finish-item">
+      <view class="finish-item-title">
+        <text>{{item.bookname}}</text>
+      </view>
+      <view class="finish-item-id">
+        <text>借阅编号：{{item.recid}}</text>
+      </view>
+      <view class="finish-item-timedesc">
+        <text>借于{{item.lendtime}} 还于{{item.rectime}} 历时{{item.constime}}</text>
+      </view>
+    </view>
+  </block>
+
+
 </view>

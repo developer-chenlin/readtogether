@@ -5,7 +5,7 @@
 .top-tab {
   width: 750rpx;
   height: 100rpx;
-  background: #298de5;
+  background: #51658A;
   color: #8ccefd;
   font-size: 28rpx;
   line-height: 100rpx;
@@ -31,7 +31,7 @@
 
 /*
 test
- 
+ `
  */
 
 /*图书界面新css布局*/
@@ -82,32 +82,32 @@ test
 }
 
 .book-title {
-  height: 40rpx;
+  height: 35rpx;
   margin-right: 5rpx;
-  overflow: hidden;
+   overflow: hidden;
   text-overflow: ellipsis;
+   line-height: 30rpx;
+  align-items: center;
 }
 
 .book-title  text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 32rpx;
+   font-size: 30rpx;
+ 
   text-align: center;
   color: black;
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin: 10rpx;
-  padding: 10rpx;
-}
+  margin: 0 auto;
+  }
 
 .book-brief {
-  margin: 5rpx;
-  height: 135rpx;
+   height: 142rpx;
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 30rpx;
-}
+  }
 
 .book-brief text {
   font-size: 22rpx;
@@ -115,6 +115,8 @@ test
 
 .book-info {
   height: 30rpx;
+     flex-direction: row;
+  display: flex;
 }
 
 .book-author {
@@ -122,7 +124,7 @@ test
   height: 100%;
   flex-direction: row;
   display: flex;
-}
+ }
 
 .book-author image {
   position: relative;
@@ -141,5 +143,6 @@ test
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+color: #888;
 }
  

@@ -1,19 +1,159 @@
-.container {
+.lend-list {
+  margin-top: 20rpx;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+  width: 100%;
+ }
+
+.lend-section {
+   width: 100%;
+  height: 40rpx;
+  background-color: coral;
 }
 
-.textStyle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.lend-section text {
+  padding-left: 15rpx;
+  font-size: 30rpx;
+   font-weight: 700;
 }
 
-.textContainer {
-  margin-top: 200px;
+.finish-item {
+  height: 140rpx;
+  overflow: hidden;
+  text-overflow: ellpsis;
+   margin: 10rpx 0rpx;
+  background-color: #EEE;
+}
+
+.finish-item-title {
+   height: 40rpx;
+  padding-left:8rpx;
+  }
+
+ .finish-item-title text {
+font-size: 26rpx;
+line-height: 26rpx;
+ }
+.finish-item-id{
+   margin: 5rpx;
+   height: 40rpx;
+}
+ .finish-item-id text {
+font-size: 22rpx;
+line-height: 22rpx;
+ }
+.finish-item-timedesc{
+   margin: 5rpx;
+   height: 40rpx;
+}
+
+ .finish-item-timedesc text {
+font-size: 22rpx;
+line-height: 32rpx;
+color: #888;
+ }
+
+
+/*待还item布局*/
+.book-item {
+  position: relative;
+  margin: 16rpx 0;
+  height: 220rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.book-left {
+  width: 150rpx;
+  margin: 10rpx;
+}
+
+.book-left image {
+  border-radius: 10rpx;
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.book-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rpx;
+  overflow: hidden;
+}
+
+.book-state {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 100;
+}
+
+.book-state image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.book-title {
+  height: 40rpx;
+   margin-right: 5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10rpx;
+}
+
+.book-title  text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32rpx;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 10rpx;
+  padding: 10rpx;
+}
+
+ 
+
+ 
+
+.book-info {
+  height: 33rpx;
+     flex-direction: row;
+  display: flex;
+   margin-bottom: 5rpx;
+}
+
+.book-author {
+  width: 40%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+ }
+
+.book-author image {
+  position: relative;
+  min-width: 30rpx;
+  width: 30rpx;
+  height: 100%;
+}
+
+.book-author text {
+  position: relative;
+  max-height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  text-align: left;
+  margin-left: 15rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+color: #888;
 }

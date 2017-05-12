@@ -9,7 +9,8 @@
     "pages/me-hirstory/me-hirstory",
     "pages/me-level/me-level",
     "pages/me-list/me-list",
-    "pages/me-info/me-info"
+    "pages/me-info/me-info",
+    "pages/bannerdetail/bannerdetail"
   ],
   "window": {
      "navigationBarBackgroundColor": "#51658A",
@@ -18,8 +19,9 @@
   },
   "tabBar": {
      "backgroundColor": "#51658A",
-    "borderStyle": "black",
-    "list": [
+     "selectedColor": "white",
+     "color": "#000",
+     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "书库",

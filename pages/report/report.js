@@ -20,14 +20,14 @@ wx.showToast({
 
 
 wx.request({
+  
   url: 'https://chenlean.com/ekbook/demo/singlereport.php?reportid=1000',
   data: {},
   method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
   // header: {}, // 设置请求的 header
   success: function(res){
       wx.hideToast();
-      console.log(res.data);
-       var article = res.data.article;
+        var article = res.data.article;
        
     //     console.log(article);
     WxParse.wxParse('article', 'html', article, that, 5);

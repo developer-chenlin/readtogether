@@ -1,26 +1,34 @@
+var WxParse = require('../../wxParse/wxParse.js');
+
 Page({
   
   data:{
-    text:"Page me-hirstory"
+    text:"Page bannerdetail"
   },
   onLoad:function(options){
     var that = this;
 
     // 页面初始化 options为页面跳转所带来的参数
-    wx.request({
+ wx.showToast({
+  title: '加载中...',
+  duration: 10000,
+  icon: 'loading'
+})
 
-      url: 'https://chenlean.com/ekbook/record/peorecord.php?readerid=GDEK1743',
+    wx.request({
+      url: "https://chenlean.com/ekbook/demo/bannersource/banner"+options.banneridx+".php",
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
       success: function (res) {
         wx.hideToast();
-        console.log(res.data);
-        that.setData({
-          finishary: res.data.finishhandle,
-          needary: res.data.needhandle,
-         })
-       
+         var banner = res.data;
+ 
+
+        //     console.log(article);
+          WxParse.wxParse('banner', 'html', banner, that, 5);
+
+
 
       },
       fail: function (res) {
@@ -31,9 +39,10 @@ Page({
       }
     })
 
- 
- 
-   },
+
+
+
+  },
   onReady:function(){
     // 页面渲染完成
   },

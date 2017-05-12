@@ -6,9 +6,11 @@
   </view>
   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
     <block wx:for="{{banners}}" wx:for-index="index">
+    <navigator url="../../pages/bannerdetail/bannerdetail?banneridx={{index+1}}">
       <swiper-item>
         <image src="{{item.url}}" class="slide-image" />
       </swiper-item>
+      </navigator>
     </block>
   </swiper>
   <scroll-view  bindscrolltolower="lowerRefresh" bindscrolltoupper="upperLoad">
@@ -30,12 +32,20 @@
             <view class="book-brief">
               <text>{{item.introduce}}</text>
             </view>
-            <view class="book-info">
+
+               <view class="book-info">
               <view class="book-author">
                 <image src="../../images/author.png"></image>
                 <text>{{item.author}}</text>
               </view>
+                  <view class="book-author">
+                <image src="../../images/bookzan.png"></image>
+                <text>{{item.superbnum}}</text>
+              </view>
             </view>
+
+
+         
           </view>
         </view>
       </navigator>
